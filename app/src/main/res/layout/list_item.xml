@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/card_borders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:src="@drawable/baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/CustomerName"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_height="wrap_content"
+        android:text="@string/customer_1"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Transferbutton"
+            android:layout_width="wrap_content"
+            android:background="@drawable/transfer_button_style"
+            android:layout_gravity="center"
+            android:textSize="11sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="@string/transfer_money" />
+    </LinearLayout>
+</LinearLayout>
